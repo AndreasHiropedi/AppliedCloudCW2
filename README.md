@@ -3,3 +3,5 @@
 Second coursework of the Applied Cloud Programming course.
 
 Mark: /100
+
+Essay mark: /100
