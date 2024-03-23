@@ -1,4 +1,4 @@
-package com.coursework1.appliedcloudcw2;
+package com.coursework2.appliedcloudcw2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
