@@ -343,13 +343,13 @@ public class KafkaController {
                 return ResponseEntity.badRequest().build();
             }
 
-            byte[] blobData = blobResponse.getBody();
+            String blobData = blobResponse.getBody().toString();
 
             // Create producer
-            try (KafkaProducer<String, byte[]> producer = new KafkaProducer<>(kafkaPros)) {
+            try (KafkaProducer<String, String> producer = new KafkaProducer<>(kafkaPros)) {
 
                 // Write BLOB data to writeTopic
-                ProducerRecord<String, byte[]> record = new ProducerRecord<>(writeTopic, key, blobData);
+                ProducerRecord<String, String> record = new ProducerRecord<>(writeTopic, key, blobData);
                 producer.send(record);
                 return ResponseEntity.ok().build();
 
