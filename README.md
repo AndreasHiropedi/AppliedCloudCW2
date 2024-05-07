@@ -4,4 +4,4 @@ Second coursework of the Applied Cloud Programming course.
 
 Mark: 52/100 (store and retrieve methods incorrect)
 
-Essay mark: /100
+Essay mark: 72/100
